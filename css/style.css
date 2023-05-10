@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --dd: #233142;
+    --ff: #455d7a;
+    --gg: #e3e3e3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dd);
+    font-family: 'Lato', sans-serif;
+    padding: 50px;
+}
+.todoContainer {
+    border-radius: 8px;
+    width: 400px;
+    background-color: var(--ff);
+    padding: 20px;
+}
+.tasksContainer {
+    margin-top: 20px;
+}
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.taskInput {
+    outline: none;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+    border-radius: 15px;
+    background-color: var(--gg);
+    color: var(--ff);
+}
+.taskInput::placeholder {
+    color: var(--ff);
+}
+.btnAdd {
+    cursor: pointer;
+    font-size: 40px;
+    margin-left: 10px;
+    color: var(--gg);
+}
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dd);
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+    align-items: center;
+}
+.taskName {
+    font-size: 20px;
+    color: var(--gg);
+    word-break: break-all;
+}
+.deleteBtn {
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--gg);
+}
+.emptyMsg {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: var(--gg);
+    margin-top: 15px;
+}
+@media(max-width: 768px) {
+    body {
+        padding: 25px;
+    }
+    .todoContainer {
+        width: 100%;
+    }
+    .inputContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .taskInput {
+        width: 100%;
+    }
+    .btnAdd {
+        width: 100%;
+        background-color: var(--gg);
+        color: #233142;
+        text-align: center;
+        margin-top: 10px;
+        padding: 5px;
+        margin-left: 0px;
+        border-radius: 5px;
+    }
+}
