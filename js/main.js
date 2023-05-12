@@ -3,7 +3,6 @@ let tasks = [];
 class Task {
   constructor(name) {
     this.name = name;
-    this.status = "pending";
     this.id = null;
   }
 }
